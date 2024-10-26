@@ -1,0 +1,4 @@
+/home/mirla-lopes/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/mirla-lopes/.local/share/JetBrains/Toolbox/apps/clion/bin/ninja/linux/x64/ninja -G Ninja -S /home/mirla-lopes/Documentos/faculdade/estrutura-dados-lineares/oop-review -B /home/mirla-lopes/Documentos/faculdade/estrutura-dados-lineares/oop-review/cmake-build-debug
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/mirla-lopes/Documentos/faculdade/estrutura-dados-lineares/oop-review/cmake-build-debug
