@@ -2,7 +2,7 @@
 // Created by mirla-lopes on 13/11/24.
 //
 
-#include "headers/linked_list.h"
+#include "linked_list.h"
 #include <iostream>
 
 Node::Node(int firstValue, int secondValue) {
