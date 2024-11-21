@@ -21,49 +21,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0a51442-c278-4944-85f2-9dd364b7a32d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/linked-list/headers/linked_list.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/linked-list/src/linked_list.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/linear-data-structure.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/linear-data-structure.iml" afterDir="false" />
+    <list default="true" id="d0a51442-c278-4944-85f2-9dd364b7a32d" name="Changes" comment="fix: Renaming project">
+      <change afterPath="$PROJECT_DIR$/linked-list-polynomials/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/.cmake/api/v1/query/cache-v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/.cmake/api/v1/reply/cache-v2-9b50e0cbea831a8ef6ed.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-dd92b8a524a57b3bfa9b.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-577948681d31f5826a5f.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/.cmake/api/v1/reply/index-2024-10-26T00-17-28-0953.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/.cmake/api/v1/reply/target-oop-review-Debug-3dd6db34b6152afc0588.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-16d5c1790d7e535d2a57.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/.ninja_deps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/.ninja_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/CMakeFiles/3.29.6/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/CMakeFiles/3.29.6/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/CMakeFiles/3.29.6/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/CMakeFiles/3.29.6/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/CMakeFiles/3.29.6/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/CMakeFiles/3.29.6/CompilerIdCXX/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/CMakeFiles/oop-review.dir/main.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/CMakeFiles/review.dir/main.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/build.ninja" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop-review/cmake-build-debug/oop-review" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/linked-list-polynomials/src/linked_list.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linked-list-polynomials/src/linked_list.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,6 +121,8 @@
       <workItem from="1732201296725" duration="45000" />
       <workItem from="1732201717869" duration="194000" />
       <workItem from="1732201926705" duration="1000" />
+      <workItem from="1732206022418" duration="47000" />
+      <workItem from="1732206519852" duration="1000" />
     </task>
     <servers />
   </component>
