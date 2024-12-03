@@ -22,10 +22,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0a51442-c278-4944-85f2-9dd364b7a32d" name="Changes" comment="fix: Renaming project">
-      <change afterPath="$PROJECT_DIR$/linked-list-polynomials/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked-list-polynomials/src/linked_list.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/linked-list-polynomials/src/linked_list.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +49,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/linked-list/linked_list.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/linked-list/linked_list.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///home/mirla-lopes/Documentos/faculdade/linear-data-structure/linked-list-polynomials/src/linked_list.cpp" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
@@ -79,7 +75,7 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "develop",
-    "last_opened_file_path": "/home/mirla-lopes/Documentos/faculdade/linear-data-structure",
+    "last_opened_file_path": "/home/mirla-lopes/Documentos/faculdade/linear-data-structure/linked-list-polynomials",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -122,7 +118,7 @@
       <workItem from="1732201717869" duration="194000" />
       <workItem from="1732201926705" duration="1000" />
       <workItem from="1732206022418" duration="47000" />
-      <workItem from="1732206519852" duration="1000" />
+      <workItem from="1732206519852" duration="485000" />
     </task>
     <servers />
   </component>
