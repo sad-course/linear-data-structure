@@ -6,4 +6,5 @@ set(CMAKE_CXX_STANDARD 14)
 add_executable(hash_map
     main.cpp
         headers/hash_table.h
-        hash_table.cpp)
+        hash_table.cpp
+        challenge.cpp)

@@ -10,4 +10,6 @@ add_executable(linked_list_polynomials
     src/linked_list.cpp
         headers/node.h
         src/node.cpp
-        headers/linked_list_polynomial.h)
+        headers/linked_list_polynomial.h
+        src/linked_list_polynomial.cpp
+        src/main.cpp)

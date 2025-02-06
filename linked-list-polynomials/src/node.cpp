@@ -3,10 +3,9 @@
 //
 
 #include "node.h"
+#include <iostream>
 
-// Node::~Node() {
-//     delete this;
-// }
+Node::~Node() = default;
 
 int Node::getFirstValue() const {
     return this->firstValue;
@@ -33,8 +32,21 @@ void Node::setNext(Node *next) {
 }
 
 Node Node::operator+(const Node& rhs) const{
-    Node temp(0,0);
-    temp.setFirstValue(this->getFirstValue() + rhs.getFirstValue());
-    temp.setSecondValue(this->getSecondValue() + rhs.getSecondValue());
-    return temp;
+    return {this->getFirstValue() + rhs.getFirstValue(), (this->getSecondValue())};
+}
+
+Node Node::operator-(const Node &rhs) const {
+    if (rhs.getSecondValue() != this->getSecondValue()) {
+        throw std::runtime_error("Polynomial is empty. Cannot determine degree.");
+    }
+    return {this->getFirstValue() - rhs.getFirstValue(), (rhs.getSecondValue())};
+}
+
+bool Node::operator==(const Node &rhs) const {
+    if (rhs.getFirstValue() == this->getFirstValue()){
+        if (rhs.getSecondValue() == this->getSecondValue()) {
+            return true;
+        }
+    }
+    return false;
 }

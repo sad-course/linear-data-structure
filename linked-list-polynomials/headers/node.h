@@ -14,8 +14,7 @@ private:
 
 public:
     Node(int firstValue, int secondValue) : firstValue(firstValue), secondValue(secondValue) {};
-    // ~Node();
-
+    ~Node();
     int getFirstValue() const;
     int getSecondValue() const;
     void setFirstValue(int firstValue);
@@ -25,6 +24,10 @@ public:
     Node *getNext();
     void setNext(Node *next);
 
+    //posso colocar diretamente em outra class para representar o monomio
     Node operator+(const Node& rhs) const;
+    Node operator-(const Node& rhs) const;
+    Node operator*(const Node& rhs) const;
+    bool operator==(const Node& rhs) const;
 };
 #endif //NODE_H

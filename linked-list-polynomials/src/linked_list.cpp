@@ -6,28 +6,31 @@
 #include "node.h"
 #include <iostream>
 
-
 LinkedList::LinkedList() {
     Node* head = new Node(0, 0);
     this->head = head;
 }
 
+
+/*
+    Destruct the linked list
+    while the head is not null, store in temporary node
+    delete the head and get the next node
+*/
 LinkedList::~LinkedList() {
-    this->head = nullptr;
+    while(head) {
+        const Node* temp = head;
+        head = head->getNext();
+        delete temp;
+    }
 }
 
 Node *LinkedList::getNext(Node *node) {
     return node->getNext();
 }
 
-int LinkedList::getPolynomialDegree() {
-    Node *firstElement = this->head->getNext();
-    if (firstElement == nullptr) {
-        return 0;
-    }
-    return firstElement->getSecondValue();
-}
 
+//Tamanho de polinomio - T/t
 int LinkedList::getLength() {
     Node *currentElement = this->head->getNext();
     int length = 0;
@@ -48,30 +51,29 @@ void LinkedList::addNode(Node *node) {
     currentNode->setNext(node);
 }
 
-// Add node and verifying exponent
+
 void LinkedList::addNode(int firstValue, int secondValue) {
-    Node *previousElement = this->head;
-    Node *nextElement = previousElement->getNext();
+    Node* currentNode = this->head;
+    Node* createdNode = new Node(firstValue, secondValue);
 
-    Node *createdNode = new Node(firstValue, secondValue);
-    bool is_element_added = false;
-
-    while (!is_element_added) {
-        if (nextElement == nullptr) {
-            previousElement->setNext(createdNode);
-            is_element_added = true;
-            break;
-        }
-
-        if (createdNode->getSecondValue() > nextElement->getSecondValue()) {
-            previousElement->setNext(createdNode);
-            createdNode->setNext(nextElement);
-            is_element_added = true;
-            break;
-        }
-        previousElement = nextElement;
-        nextElement = previousElement->getNext();
+    while (currentNode->getNext() != nullptr) {
+        currentNode = currentNode->getNext();
     }
+    currentNode->setNext(createdNode);
+
+}
+
+bool LinkedList::nodeExists(int firstValue, int secondValue) {
+    Node* currentNode = this->head;
+    Node createdNode = Node(firstValue, secondValue);
+
+    while (currentNode != nullptr) {
+        if (*currentNode == createdNode) {
+            return true;
+        }
+        currentNode = currentNode->getNext();
+    }
+    return false;
 }
 
 void LinkedList::deleteNode(Node *node) {
@@ -90,7 +92,7 @@ void LinkedList::deleteNode(Node *node) {
 }
 
 
-void LinkedList::listAllElements() {
+void LinkedList::listNodes() {
     Node* currentNode = this->head;
     int linkedListLength = 0;
 
@@ -100,8 +102,7 @@ void LinkedList::listAllElements() {
     }
     while (currentNode != nullptr) {
         if (currentNode != this->head) {
-            std::cout << currentNode->getFirstValue() <<  std::endl;
-            std::cout << currentNode->getSecondValue() << std::endl;
+            std::cout << "Monomio: " << currentNode->getFirstValue() << "^" <<  currentNode->getSecondValue() << std::endl;
             linkedListLength++;
         }
         currentNode = currentNode->getNext();
@@ -111,24 +112,3 @@ void LinkedList::listAllElements() {
         std::cout << "Lista acabou " << linkedListLength << std::endl;
     }
 }
-
-
-int main() {
-    LinkedList list;
-
-    Node teste(1,9);
-    Node teste2(1,1);
-
-    Node result = teste + teste2;
-
-    //como vou receber o elemento pra excluir então?
-    list.addNode(2,5);
-    list.addNode(7,0);
-    list.addNode(3,9);
-
-
-    list.listAllElements();
-    std::cout << "Grau: " <<  list.getPolynomialDegree() << std::endl;
-    std::cout << "Tamanho: " << list.getLength() << std::endl;
-}
-
