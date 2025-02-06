@@ -1,3 +1,0 @@
-/home/mirla-lopes/Documentos/faculdade/estrutura-dados-lineares/oop-review/cmake-build-debug/CMakeFiles/oop-review.dir
-/home/mirla-lopes/Documentos/faculdade/estrutura-dados-lineares/oop-review/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/mirla-lopes/Documentos/faculdade/estrutura-dados-lineares/oop-review/cmake-build-debug/CMakeFiles/rebuild_cache.dir

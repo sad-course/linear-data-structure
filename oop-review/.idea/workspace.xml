@@ -13,9 +13,7 @@
     <option name="reloaded" value="true" />
   </component>
   <component name="CMakeRunConfigurationManager">
-    <generated>
-      <config projectName="oop-review" targetName="oop-review" />
-    </generated>
+    <generated />
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -23,7 +21,21 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af897712-381a-4dfc-8a1e-1a3889ac2971" name="Changes" comment="" />
+    <list default="true" id="af897712-381a-4dfc-8a1e-1a3889ac2971" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../hash-map/challenge.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hash-map/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hash-map/.idea/editor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hash-map/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hash-map/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hash-map/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../hash-map/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hash-map/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../hash-map/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked-list-polynomials/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list-polynomials/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked-list-polynomials/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list-polynomials/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked-list-polynomials/headers/linked_list.h" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list-polynomials/headers/linked_list.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked-list-polynomials/headers/linked_list_polynomial.h" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list-polynomials/headers/linked_list_polynomial.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked-list-polynomials/headers/node.h" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list-polynomials/headers/node.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked-list-polynomials/src/linked_list.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list-polynomials/src/linked_list.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linked-list-polynomials/src/node.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../linked-list-polynomials/src/node.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +45,9 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
@@ -332,7 +347,8 @@
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "last_opened_file_path": "/home/mirla-lopes/Documentos/faculdade/estrutura-dados-lineares/oop-review",
+    "git-widget-placeholder": "develop",
+    "last_opened_file_path": "/home/mirla-lopes/development/C++/basic_programming",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -342,27 +358,22 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="CMake Application.oop-review">
+  <component name="RunManager" selected="CMake Application.review">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="oop-review" type="CMakeListConfigurationType" factoryName="CMakeListConfigurationFactory" temporary="true">
       <method v="2" />
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="oop-review" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="oop-review" TARGET_NAME="oop-review" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="oop-review" RUN_TARGET_NAME="oop-review">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="review" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="review" TARGET_NAME="review" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="review" RUN_TARGET_NAME="review">
+    <configuration name="review" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="review" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="review">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="CMake Application.oop-review" />
+      <item itemvalue="CMake Application.review" />
       <item itemvalue="CMake Debug.oop-review" />
     </list>
     <recent_temporary>
@@ -386,6 +397,7 @@
       <workItem from="1729884979130" duration="1626000" />
       <workItem from="1729899226623" duration="1000" />
       <workItem from="1729899270870" duration="2510000" />
+      <workItem from="1737904355965" duration="30000" />
     </task>
     <servers />
   </component>
