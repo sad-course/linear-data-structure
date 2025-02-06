@@ -7,9 +7,9 @@
 
 template<typename T>
 std::ostream &operator<<(std::ostream &os, LinkedList<T> &list) {
-    Node<T> *current = list.head;
+    Node<T> *current = list.getHead();
     while (current != nullptr) {
-        os << current->data << " ";
+        os << "(" << current->data << ")->";
         current = current->next;
     }
     os << "nullptr" << std::endl;
@@ -18,9 +18,9 @@ std::ostream &operator<<(std::ostream &os, LinkedList<T> &list) {
 
 template<typename T>
 std::ostream &operator<<(std::ostream &os, DoublyLinkedList<T> &list) {
-    DNode<T> *current = list.head;
+    DNode<T> *current = list.getHead();
     while (current != nullptr) {
-        os << "(" << current->data << ")->";
+        os << "(" << current->data << ")<->";
         current = current->next;
     }
     os << "nullptr" << std::endl;
@@ -61,8 +61,16 @@ int main() {
     doublyList.append(2);
     doublyList.append(4);
     doublyList.append(3);
+    doublyList.append(1);
 
     std::cout << doublyList;
+
+    LinkedList<int> list;
+    list.append(3);
+    list.append(3);
+    list.append(2);
+    list.append(1);
+    std::cout << list;
 
 
     CircularLinkedList<char> persons;
