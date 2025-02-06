@@ -6,73 +6,77 @@
 #ifndef LINKEDLIST_H
 #define LINKEDLIST_H
 
-template <typename T>
-class LinkedList{
-  public:
-    Node<T>* head;
-    LinkedList() {
-        head = nullptr;
-    }
-    void append(T data) {
-        Node<T>* newNode = new Node<T>{data, nullptr};
+template<typename T>
+class LinkedList {
+private:
+    Node<T> *head;
 
-        if (head == nullptr) {
-            head = newNode;
+public:
+    LinkedList(): head(nullptr) {
+    }
+
+    Node<T> *getHead() {
+        return this->head;
+    }
+
+    void append(T data) {
+        Node<T> *newNode = new Node<T>{data, nullptr};
+
+        if (this->head == nullptr) {
+            this->head = newNode;
             return;
         }
-        Node<T>* current = head;
-        while(current->next != nullptr) {
+        Node<T> *current = this->head;
+        while (current->next != nullptr) {
             current = current->next;
         }
         current->next = newNode;
     }
 
     void pushFront(T data) {
-        Node<T>* newNode = new Node<T>{data, nullptr};
-        if (!head) {
-            head = newNode;
+        Node<T> *newNode = new Node<T>{data, nullptr};
+        if (!this->head) {
+            this->head = newNode;
             return;
         }
-        newNode->next = head;
-        head = newNode;
+        newNode->next = this->head;
+        this->head = newNode;
     }
 
     void pop(T data) {
-        if (!head) {
+        if (!this->head) {
             std::cout << "Empty list!" << std::endl;
             return;
         }
-        Node<T>* current = head;
-        if (head->data == data) {
-            head = head->next;
+        Node<T> *current = this->head;
+        if (this->head->data == data) {
+            this->head = this->head->next;
             delete current;
-        }
-        else {
-            while(current->next != nullptr) {
-                Node<T>* nextElement = current->next;
+        } else {
+            while (current->next != nullptr) {
+                Node<T> *nextElement = current->next;
                 if (nextElement->data == data) {
                     current->next = nextElement->next;
                     delete nextElement;
-                }else {
+                } else {
                     current = current->next;
                 }
-
             }
         }
     }
 
     bool search(T data) {
-        int index=0;
-        if(!head) {
+        int index = 0;
+        if (!this->head) {
             std::cout << "Empty list!" << std::endl;
             return false;
         }
-        if (head->data == data) {
+        if (this->head->data == data) {
             std::cout << "Element found at index=" << index << std::endl;
             return true;
         }
-        Node<T>* current = head;
-        while(current != nullptr) {
+        Node<T> *current = this->head;
+        while (current != nullptr) {
             if (current->data == data) {
                 std::cout << "Find it in index= " << index << std::endl;
                 return true;
@@ -83,24 +87,22 @@ class LinkedList{
     }
 
     void removeDuplicate() {
-        Node<T>* current = head;
-        Node<T>* next = current;
+        Node<T> *current = this->head;
+        Node<T> *next = current;
 
-        while(current->next != nullptr) {
-            while(next->next != nullptr) {
+        while (current->next != nullptr) {
+            while (next->next != nullptr) {
                 if (current->data == next->next->data) {
-                    Node<T>* temp = next->next;
+                    Node<T> *temp = next->next;
                     next->next = temp->next;
                     delete temp;
-                }else {
+                } else {
                     next = next->next;
                 }
-
             }
             current = current->next;
             next = current->next;
         }
-
     }
 };
 
