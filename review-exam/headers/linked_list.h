@@ -1,16 +1,10 @@
 //
 // Created by mirla-lopes on 04/02/25.
 //
+#include "node.h"
 
 #ifndef LINKEDLIST_H
 #define LINKEDLIST_H
-
-template <typename T>
-struct Node{
-    T data;
-    Node<T>* next;
-};
-
 
 template <typename T>
 class LinkedList{

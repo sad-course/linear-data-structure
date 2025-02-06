@@ -9,4 +9,5 @@ add_executable(review_exam main.cpp
         headers/linked_list.h
         headers/doubly_linked_list.h
         headers/circular_linked_list.h
+        headers/stack.h
 )

@@ -6,14 +6,7 @@
 #define DOUBLY_LINKED_LIST_H
 #include <iostream>
 #include <ostream>
-
-template <typename T>
-struct DNode{
-  T data;
-  DNode *prev;
-  DNode *next;
-};
-
+#include "node.h"
 
 template <typename T>
 class DoublyLinkedList {
