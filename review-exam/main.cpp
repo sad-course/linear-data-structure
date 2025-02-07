@@ -3,7 +3,8 @@
 #include "headers/doubly_linked_list.h"
 #include "headers/circular_linked_list.h"
 #include "headers/stack.h"
-#include <sstream>
+#include <map>
+#include <vector>
 
 template<typename T>
 std::ostream &operator<<(std::ostream &os, LinkedList<T> &list) {
@@ -56,6 +57,36 @@ std::ostream &operator<<(std::ostream &os, Stack<T> &stack) {
     return os;
 }
 
+bool isExpressionBalanced(std::string &expression) {
+    Stack<char> stack_brackets;
+    std::string opening_brackets = "{[(";
+    std::string closing_brackets = "}])";
+
+    std::map<char, char> bracket_corresponding_to =
+    {
+        {')', '('},
+        {']', '['},
+        {'}', '{'}
+    };
+
+    for (auto &ch: expression) {
+        if (opening_brackets.find(ch) != std::string::npos) {
+            stack_brackets.push(ch);
+        }
+        if (closing_brackets.find(ch) != std::string::npos) {
+            if (stack_brackets.getHead() == nullptr || stack_brackets.peek() != bracket_corresponding_to[ch]) {
+                return false;
+            }
+            stack_brackets.pop();
+        }
+    }
+    bool result = true;
+    if (stack_brackets.getHead() != nullptr) {
+        result = false;
+    }
+    return result;
+}
+
 int main() {
     DoublyLinkedList<int> doublyList;
     doublyList.append(2);
@@ -81,23 +112,22 @@ int main() {
     persons.remove(5);
     std::cout << persons;
 
-    Stack<char> charStack;
-    std::string stringValue;
-    std::cin >> stringValue;
 
-    for (auto &ch: stringValue) {
-        charStack.push(ch);
-    }
-    std::cout << charStack;
+    std::vector<std::string> expressions = {
+        "(a + b)",
+        "{[a * (b + c)]}",
+        "a + {b - [c * d]}",
+        "a + (b",
+        "{[a * b]",
+        "(a + b)}",
+        "a + {b - [c * d}"
+    };
 
-    charStack.pop();
-    charStack.pop();
-    charStack.pop();
-
-
-    charStack.push('M');
-    charStack.push('A');
-    std::cout << charStack;
-
+    for (auto &element: expressions) {
+        if (isExpressionBalanced(element))
+            std::cout << element << " \033[0;32m Expressão correta \033[0m" << std::endl;
+        else
+            std::cout << element << " \033[0;31m Expressão incorreta \033[0m" << std::endl;
+    };
     return 0;
 }
