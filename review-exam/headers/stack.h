@@ -26,22 +26,27 @@ public:
         return this->tail;
     }
 
+    T peek() {
+        return this->head->data;
+    }
+
     void push(T data) {
         Node<T> *createdNode = new Node<T>{data, nullptr};
         if (!this->tail) {
             this->head = createdNode;
             this->tail = createdNode;
+            return;
         }
-        createdNode->next = head;
-        head = createdNode;
+        createdNode->next = this->head;
+        this->head = createdNode;
     };
 
     void pop() {
         if (!this->tail) {
             std::cerr << "Empty stack!" << std::endl;
         }
-        Node<T> *tmp = head;
-        head = tmp->next;
+        Node<T> *tmp = this->head;
+        this->head = tmp->next;
         delete tmp;
     }
 };
