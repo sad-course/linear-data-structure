@@ -12,9 +12,7 @@ private:
     Node<T> *head;
 
 public:
-    CircularLinkedList() {
-        this->head = nullptr;
-    };
+    CircularLinkedList(): head(nullptr) {};
 
     Node<T> *getHead() {
         return this->head;

@@ -10,4 +10,10 @@ add_executable(review_exam main.cpp
         headers/doubly_linked_list.h
         headers/circular_linked_list.h
         headers/stack.h
+        headers/queue.h
+        src/examples/queue.cpp
+        src/examples/doubly_linked_list.cpp
+        src/examples/linked_list.cpp
+        src/examples/circular_linked_list.cpp
+        src/examples/stack.cpp
 )

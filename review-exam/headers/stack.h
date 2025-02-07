@@ -13,9 +13,7 @@ private:
     Node<T> *tail;
 
 public:
-    Stack() {
-        this->head = nullptr;
-        this->tail = nullptr;
+    Stack(): head(nullptr), tail(nullptr) {
     }
 
     Node<T> *getHead() {
