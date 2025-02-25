@@ -5,6 +5,19 @@
 #include "linked_list.h"
 #include "node.h"
 #include <iostream>
+#include <ostream>
+
+std::ostream& operator<<(std::ostream &os, LinkedList &list) {
+    Node* currentNode = list.getHead();
+    while(currentNode != nullptr) {
+        os << "(" << currentNode->getFirstValue() << ", " << currentNode->getSecondValue() << ")";
+        currentNode = currentNode->getNext();
+        if (currentNode != nullptr) {
+            os << " -> ";
+        }
+    }
+    return os;
+}
 
 LinkedList::LinkedList() {
     Node* head = new Node(0, 0);
@@ -29,6 +42,9 @@ Node *LinkedList::getNext(Node *node) {
     return node->getNext();
 }
 
+Node *LinkedList::getHead() {
+    return head;
+}
 
 //Tamanho de polinomio - T/t
 int LinkedList::getLength() {
